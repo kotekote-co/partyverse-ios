@@ -1,10 +1,3 @@
-//
-//  partyverseUITests.swift
-//  partyverseUITests
-//
-//  Created by Ренат on 06.05.2023.
-//
-
 import XCTest
 
 final class partyverseUITests: XCTestCase {

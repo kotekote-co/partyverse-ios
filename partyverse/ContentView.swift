@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  partyverse
-//
-//  Created by Ренат on 06.05.2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {

@@ -1,10 +1,3 @@
-//
-//  partyverseTests.swift
-//  partyverseTests
-//
-//  Created by Ренат on 06.05.2023.
-//
-
 import XCTest
 @testable import partyverse
 
