@@ -1,14 +1,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingProfile = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Button() {
+                    showingProfile.toggle()
+                } label: {
+                    Label("", systemImage: "person.crop.circle")
+                }
+                .sheet(isPresented: $showingProfile) {
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
