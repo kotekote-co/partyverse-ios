@@ -5,14 +5,19 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Button() {
-                    showingProfile.toggle()
-                } label: {
-                    Label("", systemImage: "person.crop.circle")
-                }
-                .sheet(isPresented: $showingProfile) {
-                    
+            HStack {
+                Spacer()
+                VStack {
+                    Button() {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("profile", systemImage: "person.crop.circle")
+                    }
+                    .padding(.all, 15)
+                    .sheet(isPresented: $showingProfile) {
+                        
+                    }
+                    Spacer()
                 }
             }
         }
