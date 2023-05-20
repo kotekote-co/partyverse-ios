@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942B4AE32A191F1700574298 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B4AE22A191F1600574298 /* MapView.swift */; };
 		9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8DE2A06AC97004E4603 /* partyverseApp.swift */; };
 		9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8E02A06AC97004E4603 /* ContentView.swift */; };
 		9451F8E32A06AC98004E4603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9451F8E22A06AC98004E4603 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		942B4AE22A191F1600574298 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9451F8DB2A06AC97004E4603 /* partyverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451F8DE2A06AC97004E4603 /* partyverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseApp.swift; sourceTree = "<group>"; };
 		9451F8E02A06AC97004E4603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942B4AE42A191F1C00574298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9451F8E02A06AC97004E4603 /* ContentView.swift */,
+				942B4AE52A191F2900574298 /* Helpers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		942B4AE52A191F2900574298 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				942B4AE22A191F1600574298 /* MapView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9451F8D22A06AC97004E4603 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +113,8 @@
 		9451F8DD2A06AC97004E4603 /* partyverse */ = {
 			isa = PBXGroup;
 			children = (
+				942B4AE42A191F1C00574298 /* View */,
 				9451F8DE2A06AC97004E4603 /* partyverseApp.swift */,
-				9451F8E02A06AC97004E4603 /* ContentView.swift */,
 				9451F8E22A06AC98004E4603 /* Assets.xcassets */,
 				9451F8E42A06AC98004E4603 /* Preview Content */,
 			);
@@ -259,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */,
+				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
