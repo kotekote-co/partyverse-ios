@@ -19,6 +19,7 @@
 		948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* SupabaseHost.swift */; };
 		948632742A1A201A00A5299D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632732A1A201A00A5299D /* ProfileHost.swift */; };
 		948632762A1A23BE00A5299D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 948632752A1A23BE00A5299D /* .gitignore */; };
+		948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632772A1A265E00A5299D /* ProfileCircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		948632702A1A1FD700A5299D /* SupabaseHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseHost.swift; sourceTree = "<group>"; };
 		948632732A1A201A00A5299D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		948632752A1A23BE00A5299D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		948632772A1A265E00A5299D /* ProfileCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCircleImage.swift; sourceTree = "<group>"; };
+		948632792A1A2B9800A5299D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				942B4AE22A191F1600574298 /* MapView.swift */,
+				948632772A1A265E00A5299D /* ProfileCircleImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -123,6 +127,7 @@
 		9451F8DD2A06AC97004E4603 /* partyverse */ = {
 			isa = PBXGroup;
 			children = (
+				948632792A1A2B9800A5299D /* Info.plist */,
 				9486326C2A1A1F8D00A5299D /* Model */,
 				942B4AE42A191F1C00574298 /* View */,
 				9451F8DE2A06AC97004E4603 /* partyverseApp.swift */,
@@ -183,6 +188,7 @@
 				9451F8D72A06AC97004E4603 /* Sources */,
 				9451F8D82A06AC97004E4603 /* Frameworks */,
 				9451F8D92A06AC97004E4603 /* Resources */,
+				9486327A2A1A2C2200A5299D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -306,6 +312,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9486327A2A1A2C2200A5299D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9451F8D72A06AC97004E4603 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +342,7 @@
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
 				948632742A1A201A00A5299D /* ProfileHost.swift in Sources */,
 				948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */,
+				948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +504,8 @@
 				DEVELOPMENT_TEAM = 393JQYVD52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = partyverse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -507,6 +536,8 @@
 				DEVELOPMENT_TEAM = 393JQYVD52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = partyverse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

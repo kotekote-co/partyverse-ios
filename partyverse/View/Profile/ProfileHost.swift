@@ -4,13 +4,17 @@ struct ProfileHost: View {
     let profileName = "Alex"
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack() {
             HStack {
                 Text("Hello, \(profileName)!")
                     .font(.title)
                     .bold()
             }
             Spacer()
+            VStack {
+                ProfileCircleImage()
+            }
+            .padding()
         }
         .padding()
     }
