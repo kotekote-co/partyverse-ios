@@ -17,6 +17,7 @@
 		9451F8FC2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */; };
 		9486326F2A1A1FC200A5299D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9486326E2A1A1FC200A5299D /* Supabase */; };
 		948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* SupabaseHost.swift */; };
+		948632742A1A201A00A5299D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632732A1A201A00A5299D /* ProfileHost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9451F8F92A06AC99004E4603 /* partyverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITests.swift; sourceTree = "<group>"; };
 		9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		948632702A1A1FD700A5299D /* SupabaseHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseHost.swift; sourceTree = "<group>"; };
+		948632732A1A201A00A5299D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		942B4AE42A191F1C00574298 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				948632722A1A200F00A5299D /* Profile */,
 				9451F8E02A06AC97004E4603 /* ContentView.swift */,
 				942B4AE52A191F2900574298 /* Helpers */,
 			);
@@ -157,6 +160,14 @@
 				948632702A1A1FD700A5299D /* SupabaseHost.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		948632722A1A200F00A5299D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				948632732A1A201A00A5299D /* ProfileHost.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */,
 				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
+				948632742A1A201A00A5299D /* ProfileHost.swift in Sources */,
 				948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
