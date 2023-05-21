@@ -315,12 +315,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		9486327A2A1A2C2200A5299D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
 			);
 			outputFileListPaths = (
 			);
@@ -328,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "token_file=~/.supabase\ntoken=\"$(cat $token_file 2>/dev/null)\"\nif [ \"$token\" ]; then\n  plutil -replace SupabaseAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\n  echo 'warning: Missing Supabase anon token'\n  echo \"warning: Get an access token, then create a new file at $token_file that contains the access token.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
