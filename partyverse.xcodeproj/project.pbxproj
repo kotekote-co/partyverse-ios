@@ -15,6 +15,8 @@
 		9451F8F02A06AC99004E4603 /* partyverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8EF2A06AC99004E4603 /* partyverseTests.swift */; };
 		9451F8FA2A06AC99004E4603 /* partyverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8F92A06AC99004E4603 /* partyverseUITests.swift */; };
 		9451F8FC2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */; };
+		9486326F2A1A1FC200A5299D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9486326E2A1A1FC200A5299D /* Supabase */; };
+		948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* SupabaseHost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		9451F8F52A06AC99004E4603 /* partyverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partyverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451F8F92A06AC99004E4603 /* partyverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITests.swift; sourceTree = "<group>"; };
 		9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		948632702A1A1FD700A5299D /* SupabaseHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseHost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9486326F2A1A1FC200A5299D /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +117,7 @@
 		9451F8DD2A06AC97004E4603 /* partyverse */ = {
 			isa = PBXGroup;
 			children = (
+				9486326C2A1A1F8D00A5299D /* Model */,
 				942B4AE42A191F1C00574298 /* View */,
 				9451F8DE2A06AC97004E4603 /* partyverseApp.swift */,
 				9451F8E22A06AC98004E4603 /* Assets.xcassets */,
@@ -146,6 +151,14 @@
 			path = partyverseUITests;
 			sourceTree = "<group>";
 		};
+		9486326C2A1A1F8D00A5299D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				948632702A1A1FD700A5299D /* SupabaseHost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +175,9 @@
 			dependencies = (
 			);
 			name = partyverse;
+			packageProductDependencies = (
+				9486326E2A1A1FC200A5299D /* Supabase */,
+			);
 			productName = partyverse;
 			productReference = 9451F8DB2A06AC97004E4603 /* partyverse.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +251,9 @@
 				ru,
 			);
 			mainGroup = 9451F8D22A06AC97004E4603;
+			packageReferences = (
+				9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 9451F8DC2A06AC97004E4603 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +299,7 @@
 				9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */,
 				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
+				948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +622,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9486326E2A1A1FC200A5299D /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9451F8D32A06AC97004E4603 /* Project object */;
 }
