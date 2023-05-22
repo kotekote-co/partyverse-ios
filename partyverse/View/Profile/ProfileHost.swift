@@ -1,22 +1,34 @@
 import SwiftUI
+import Supabase
 
 struct ProfileHost: View {
     let profileName = "Alex"
     
     var body: some View {
-        VStack() {
-            HStack {
-                Text("Hello, \(profileName)!")
-                    .font(.title)
-                    .bold()
-            }
-            Spacer()
-            VStack {
-                ProfileCircleImage()
+        NavigationView {
+            VStack() {
+                HStack {
+                    Text("Hello, \(profileName)!")
+                        .font(.title)
+                        .bold()
+                }
+                Spacer()
+                VStack {
+                    ProfileCircleImage()
+                }
+                .padding()
+                VStack {
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Label("login", systemImage: "folder")
+                    }
+                    .buttonStyle(.bordered)
+                    Spacer()
+                }
             }
             .padding()
         }
-        .padding()
     }
 }
 
