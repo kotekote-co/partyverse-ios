@@ -2,13 +2,11 @@ import SwiftUI
 import Supabase
 
 struct ProfileHost: View {
-    let profileName = "Alex"
-    
     var body: some View {
         NavigationView {
             VStack() {
                 HStack {
-                    Text("Hello, \(profileName)!")
+                    Text("greetings \("Alex")")
                         .font(.title)
                         .bold()
                 }
