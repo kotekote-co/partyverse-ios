@@ -6,6 +6,7 @@ struct LoginView: View {
         NavigationView {
             Text("Hello, World!")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
