@@ -18,7 +18,7 @@ struct ContentView: View {
                         .buttonStyle(.borderedProminent)
                         .padding(.all, 15)
                         .sheet(isPresented: $showingProfile) {
-                            ProfileHost()
+                            ProfileView()
                         }
                         Spacer()
                     }

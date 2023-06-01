@@ -17,11 +17,10 @@
 		9451F8FC2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */; };
 		9486326F2A1A1FC200A5299D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9486326E2A1A1FC200A5299D /* Supabase */; };
 		948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* SupabaseHost.swift */; };
-		948632742A1A201A00A5299D /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632732A1A201A00A5299D /* ProfileHost.swift */; };
 		948632762A1A23BE00A5299D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 948632752A1A23BE00A5299D /* .gitignore */; };
 		948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632772A1A265E00A5299D /* ProfileCircleImage.swift */; };
-		9486327C2A1A427F00A5299D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486327B2A1A427F00A5299D /* LoginView.swift */; };
 		949921952A1D6CBE00A50060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949921972A1D6CBE00A50060 /* Localizable.strings */; };
+		94AE15E22A28A659007B1EDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AE15E12A28A659007B1EDA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +53,12 @@
 		9451F8F92A06AC99004E4603 /* partyverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITests.swift; sourceTree = "<group>"; };
 		9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		948632702A1A1FD700A5299D /* SupabaseHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseHost.swift; sourceTree = "<group>"; };
-		948632732A1A201A00A5299D /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		948632752A1A23BE00A5299D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		948632772A1A265E00A5299D /* ProfileCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCircleImage.swift; sourceTree = "<group>"; };
 		948632792A1A2B9800A5299D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9486327B2A1A427F00A5299D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		949921962A1D6CBE00A50060 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		949921982A1D6CC000A50060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94AE15E12A28A659007B1EDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +177,7 @@
 		948632722A1A200F00A5299D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				948632732A1A201A00A5299D /* ProfileHost.swift */,
-				9486327B2A1A427F00A5299D /* LoginView.swift */,
+				94AE15E12A28A659007B1EDA /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -347,11 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AE15E22A28A659007B1EDA /* ProfileView.swift in Sources */,
 				9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */,
-				9486327C2A1A427F00A5299D /* LoginView.swift in Sources */,
 				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
-				948632742A1A201A00A5299D /* ProfileHost.swift in Sources */,
 				948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */,
 				948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */,
 			);
