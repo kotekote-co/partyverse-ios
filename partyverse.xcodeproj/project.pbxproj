@@ -15,11 +15,21 @@
 		9451F8F02A06AC99004E4603 /* partyverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8EF2A06AC99004E4603 /* partyverseTests.swift */; };
 		9451F8FA2A06AC99004E4603 /* partyverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8F92A06AC99004E4603 /* partyverseUITests.swift */; };
 		9451F8FC2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */; };
-		9486326F2A1A1FC200A5299D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9486326E2A1A1FC200A5299D /* Supabase */; };
-		948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* SupabaseHost.swift */; };
+		947CAABE2A29EEBB003CFA31 /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CAABD2A29EEBB003CFA31 /* SignInApple.swift */; };
+		947CAAC22A29F07E003CFA31 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CAAC12A29F07E003CFA31 /* SignInView.swift */; };
+		947CAAC52A2A2B5D003CFA31 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CAAC42A2A2B5D003CFA31 /* SignInViewModel.swift */; };
+		947CAAC82A2A2C75003CFA31 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 947CAAC72A2A2C75003CFA31 /* GoogleSignIn */; };
+		947CAACA2A2A2C75003CFA31 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 947CAAC92A2A2C75003CFA31 /* GoogleSignInSwift */; };
+		947CAACD2A2A2D39003CFA31 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 947CAACC2A2A2D39003CFA31 /* Supabase */; };
+		947CAAD02A2A34F2003CFA31 /* SignInGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CAACF2A2A34F2003CFA31 /* SignInGoogle.swift */; };
+		948632712A1A1FD700A5299D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632702A1A1FD700A5299D /* AuthManager.swift */; };
 		948632762A1A23BE00A5299D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 948632752A1A23BE00A5299D /* .gitignore */; };
 		948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632772A1A265E00A5299D /* ProfileCircleImage.swift */; };
 		949921952A1D6CBE00A50060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949921972A1D6CBE00A50060 /* Localizable.strings */; };
+		949C07A82A2A710400EBA107 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07A72A2A710400EBA107 /* AppTextField.swift */; };
+		949C07AA2A2A733500EBA107 /* AltAppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07A92A2A733500EBA107 /* AltAppTextField.swift */; };
+		949C07AC2A2A743B00EBA107 /* AppSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07AB2A2A743B00EBA107 /* AppSecureField.swift */; };
+		949C07AE2A2A78F000EBA107 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07AD2A2A78F000EBA107 /* RegistrationView.swift */; };
 		94AE15E22A28A659007B1EDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AE15E12A28A659007B1EDA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +62,20 @@
 		9451F8F52A06AC99004E4603 /* partyverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partyverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451F8F92A06AC99004E4603 /* partyverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITests.swift; sourceTree = "<group>"; };
 		9451F8FB2A06AC99004E4603 /* partyverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		948632702A1A1FD700A5299D /* SupabaseHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseHost.swift; sourceTree = "<group>"; };
+		947CAABD2A29EEBB003CFA31 /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
+		947CAAC12A29F07E003CFA31 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		947CAAC42A2A2B5D003CFA31 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		947CAACF2A2A34F2003CFA31 /* SignInGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogle.swift; sourceTree = "<group>"; };
+		948632702A1A1FD700A5299D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		948632752A1A23BE00A5299D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		948632772A1A265E00A5299D /* ProfileCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCircleImage.swift; sourceTree = "<group>"; };
 		948632792A1A2B9800A5299D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		949921962A1D6CBE00A50060 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		949921982A1D6CC000A50060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		949C07A72A2A710400EBA107 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		949C07A92A2A733500EBA107 /* AltAppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltAppTextField.swift; sourceTree = "<group>"; };
+		949C07AB2A2A743B00EBA107 /* AppSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureField.swift; sourceTree = "<group>"; };
+		949C07AD2A2A78F000EBA107 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		94AE15E12A28A659007B1EDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9486326F2A1A1FC200A5299D /* Supabase in Frameworks */,
+				947CAACA2A2A2C75003CFA31 /* GoogleSignInSwift in Frameworks */,
+				947CAAC82A2A2C75003CFA31 /* GoogleSignIn in Frameworks */,
+				947CAACD2A2A2D39003CFA31 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +110,8 @@
 		942B4AE42A191F1C00574298 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				948632722A1A200F00A5299D /* Profile */,
 				9451F8E02A06AC97004E4603 /* ContentView.swift */,
+				948632722A1A200F00A5299D /* Profile */,
 				942B4AE52A191F2900574298 /* Helpers */,
 			);
 			path = View;
@@ -100,6 +120,7 @@
 		942B4AE52A191F2900574298 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				949C07A62A2A70F000EBA107 /* TextField */,
 				942B4AE22A191F1600574298 /* MapView.swift */,
 				948632772A1A265E00A5299D /* ProfileCircleImage.swift */,
 			);
@@ -166,10 +187,29 @@
 			path = partyverseUITests;
 			sourceTree = "<group>";
 		};
+		947CAAC32A2A2B37003CFA31 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				947CAAC42A2A2B5D003CFA31 /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		947CAACE2A2A34C0003CFA31 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				948632702A1A1FD700A5299D /* AuthManager.swift */,
+				947CAACF2A2A34F2003CFA31 /* SignInGoogle.swift */,
+				947CAABD2A29EEBB003CFA31 /* SignInApple.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		9486326C2A1A1F8D00A5299D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				948632702A1A1FD700A5299D /* SupabaseHost.swift */,
+				947CAACE2A2A34C0003CFA31 /* Manager */,
+				947CAAC32A2A2B37003CFA31 /* SignIn */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,8 +218,20 @@
 			isa = PBXGroup;
 			children = (
 				94AE15E12A28A659007B1EDA /* ProfileView.swift */,
+				947CAAC12A29F07E003CFA31 /* SignInView.swift */,
+				949C07AD2A2A78F000EBA107 /* RegistrationView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		949C07A62A2A70F000EBA107 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				949C07A72A2A710400EBA107 /* AppTextField.swift */,
+				949C07A92A2A733500EBA107 /* AltAppTextField.swift */,
+				949C07AB2A2A743B00EBA107 /* AppSecureField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +252,9 @@
 			);
 			name = partyverse;
 			packageProductDependencies = (
-				9486326E2A1A1FC200A5299D /* Supabase */,
+				947CAAC72A2A2C75003CFA31 /* GoogleSignIn */,
+				947CAAC92A2A2C75003CFA31 /* GoogleSignInSwift */,
+				947CAACC2A2A2D39003CFA31 /* Supabase */,
 			);
 			productName = partyverse;
 			productReference = 9451F8DB2A06AC97004E4603 /* partyverse.app */;
@@ -276,7 +330,8 @@
 			);
 			mainGroup = 9451F8D22A06AC97004E4603;
 			packageReferences = (
-				9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				947CAAC62A2A2C75003CFA31 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				947CAACB2A2A2D39003CFA31 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			productRefGroup = 9451F8DC2A06AC97004E4603 /* Products */;
 			projectDirPath = "";
@@ -344,11 +399,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949C07A82A2A710400EBA107 /* AppTextField.swift in Sources */,
 				94AE15E22A28A659007B1EDA /* ProfileView.swift in Sources */,
+				949C07AC2A2A743B00EBA107 /* AppSecureField.swift in Sources */,
+				949C07AE2A2A78F000EBA107 /* RegistrationView.swift in Sources */,
+				947CAABE2A29EEBB003CFA31 /* SignInApple.swift in Sources */,
 				9451F8E12A06AC97004E4603 /* ContentView.swift in Sources */,
 				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
-				948632712A1A1FD700A5299D /* SupabaseHost.swift in Sources */,
+				947CAAC52A2A2B5D003CFA31 /* SignInViewModel.swift in Sources */,
+				949C07AA2A2A733500EBA107 /* AltAppTextField.swift in Sources */,
+				947CAAD02A2A34F2003CFA31 /* SignInGoogle.swift in Sources */,
+				948632712A1A1FD700A5299D /* AuthManager.swift in Sources */,
+				947CAAC22A29F07E003CFA31 /* SignInView.swift in Sources */,
 				948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,14 +583,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"partyverse/Preview Content\"";
 				DEVELOPMENT_TEAM = 393JQYVD52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = partyverse/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = partyverse;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "partyverse requests you're location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "partyverse looking for you 👀";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.0.2;
+				MARKETING_VERSION = 0.0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = co.kotekote.partyverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -552,14 +617,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"partyverse/Preview Content\"";
 				DEVELOPMENT_TEAM = 393JQYVD52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = partyverse/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = partyverse;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "partyverse requests you're location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "partyverse looking for you 👀";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,7 +636,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.0.2;
+				MARKETING_VERSION = 0.0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = co.kotekote.partyverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -692,20 +759,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+		947CAAC62A2A2C75003CFA31 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		947CAACB2A2A2D39003CFA31 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase/supabase-swift.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 0.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9486326E2A1A1FC200A5299D /* Supabase */ = {
+		947CAAC72A2A2C75003CFA31 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9486326D2A1A1FC200A5299D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = 947CAAC62A2A2C75003CFA31 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		947CAAC92A2A2C75003CFA31 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 947CAAC62A2A2C75003CFA31 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		947CAACC2A2A2D39003CFA31 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 947CAACB2A2A2D39003CFA31 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */

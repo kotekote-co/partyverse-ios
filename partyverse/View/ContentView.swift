@@ -3,6 +3,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var showingProfile = false
     
+    @State var appUser: AppUser?
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -18,7 +20,18 @@ struct ContentView: View {
                         .buttonStyle(.borderedProminent)
                         .padding(.all, 15)
                         .sheet(isPresented: $showingProfile) {
-                            ProfileView()
+                            ZStack {
+                                if let _ = appUser {
+                                    ProfileView(appUser: $appUser)
+                                } else {
+                                    SignInView(appUser: $appUser)
+                                }
+                            }
+                            .onAppear {
+                                Task {
+                                    self.appUser = try await AuthManager.shared.getCurrentSession()
+                                }
+                            }
                         }
                         Spacer()
                     }
@@ -31,9 +44,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environment(\.locale, Locale.init(identifier: "ru"))
-        ContentView()
+        ContentView(appUser: nil)
             .environment(\.locale, Locale.init(identifier: "en"))
     }
 }
