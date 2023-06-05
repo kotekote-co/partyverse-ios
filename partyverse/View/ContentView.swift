@@ -6,12 +6,35 @@ struct ContentView: View {
     @State var appUser: AppUser?
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                MapView()
-                HStack {
-                    Spacer()
-                    VStack {
+        ZStack {
+            MapView()
+            HStack {
+                Spacer()
+                VStack {
+                    if #available(iOS 16, *) {
+                        Button() {
+                            showingProfile.toggle()
+                        } label: {
+                            Label("profile", systemImage: "person.crop.circle")
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(.all, 15)
+                        .sheet(isPresented: $showingProfile) {
+                            ZStack {
+                                if let _ = appUser {
+                                    ProfileView(appUser: $appUser)
+                                } else {
+                                    SignInView(appUser: $appUser)
+                                }
+                            }
+                            .presentationDragIndicator(.visible)
+                            .onAppear {
+                                Task {
+                                    self.appUser = try await AuthManager.shared.getCurrentSession()
+                                }
+                            }
+                        }
+                    } else {
                         Button() {
                             showingProfile.toggle()
                         } label: {
@@ -33,12 +56,11 @@ struct ContentView: View {
                                 }
                             }
                         }
-                        Spacer()
                     }
+                    Spacer()
                 }
             }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

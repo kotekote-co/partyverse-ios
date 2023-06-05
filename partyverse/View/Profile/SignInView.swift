@@ -22,8 +22,15 @@ struct SignInView: View {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented) {
-                RegistrationView(appUser: $appUser)
-                    .environmentObject(viewModel)
+                if #available(iOS 16, *) {
+                    RegistrationView(appUser: $appUser)
+                        .presentationDetents([.medium, .large])
+                        .presentationDragIndicator(.visible)
+                        .environmentObject(viewModel)
+                } else {
+                    RegistrationView(appUser: $appUser)
+                        .environmentObject(viewModel)
+                }
             }
             
             Button {

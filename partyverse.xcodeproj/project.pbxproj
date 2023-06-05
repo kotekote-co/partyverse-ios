@@ -27,7 +27,6 @@
 		948632782A1A265E00A5299D /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948632772A1A265E00A5299D /* ProfileCircleImage.swift */; };
 		949921952A1D6CBE00A50060 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949921972A1D6CBE00A50060 /* Localizable.strings */; };
 		949C07A82A2A710400EBA107 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07A72A2A710400EBA107 /* AppTextField.swift */; };
-		949C07AA2A2A733500EBA107 /* AltAppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07A92A2A733500EBA107 /* AltAppTextField.swift */; };
 		949C07AC2A2A743B00EBA107 /* AppSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07AB2A2A743B00EBA107 /* AppSecureField.swift */; };
 		949C07AE2A2A78F000EBA107 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C07AD2A2A78F000EBA107 /* RegistrationView.swift */; };
 		94AE15E22A28A659007B1EDA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AE15E12A28A659007B1EDA /* ProfileView.swift */; };
@@ -73,7 +72,6 @@
 		949921962A1D6CBE00A50060 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		949921982A1D6CC000A50060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		949C07A72A2A710400EBA107 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
-		949C07A92A2A733500EBA107 /* AltAppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltAppTextField.swift; sourceTree = "<group>"; };
 		949C07AB2A2A743B00EBA107 /* AppSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecureField.swift; sourceTree = "<group>"; };
 		949C07AD2A2A78F000EBA107 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		94AE15E12A28A659007B1EDA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				949C07A72A2A710400EBA107 /* AppTextField.swift */,
-				949C07A92A2A733500EBA107 /* AltAppTextField.swift */,
 				949C07AB2A2A743B00EBA107 /* AppSecureField.swift */,
 			);
 			path = TextField;
@@ -408,7 +405,6 @@
 				942B4AE32A191F1700574298 /* MapView.swift in Sources */,
 				9451F8DF2A06AC97004E4603 /* partyverseApp.swift in Sources */,
 				947CAAC52A2A2B5D003CFA31 /* SignInViewModel.swift in Sources */,
-				949C07AA2A2A733500EBA107 /* AltAppTextField.swift in Sources */,
 				947CAAD02A2A34F2003CFA31 /* SignInGoogle.swift in Sources */,
 				948632712A1A1FD700A5299D /* AuthManager.swift in Sources */,
 				947CAAC22A29F07E003CFA31 /* SignInView.swift in Sources */,
