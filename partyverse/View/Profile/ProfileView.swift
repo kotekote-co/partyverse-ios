@@ -5,25 +5,30 @@ struct ProfileView: View {
     
     var body: some View {
         if let appUser = appUser {
-            VStack {
-                Text(appUser.uuid)
-                
-                Text(appUser.email ?? "No email")
-                
-                Button {
-                    Task {
-                        do {
-                            try await AuthManager.shared.signOut()
-                            self.appUser = nil
-                        } catch {
-                            print("error signing out")
+            NavigationView {
+                ZStack {
+                    HStack {
+                        Spacer()
+                        VStack {
+                            NavigationLink {
+                                SettingView(appUser: $appUser)
+                            } label: {
+                                Label("settings", systemImage: "gear")
+                            }
+                            .padding(.top, 15)
+                            .padding(.trailing, 15)
+                            .buttonStyle(.borderless)
+                            .labelStyle(.iconOnly)
+                            Spacer()
                         }
                     }
-                } label: {
-                    Text("Sign out")
-                        .foregroundColor(.red)
+                    
+                    VStack {
+                        Text(appUser.uuid)
+                        
+                        Text(appUser.email ?? "No email")
+                    }
                 }
-                
             }
         }
     }
