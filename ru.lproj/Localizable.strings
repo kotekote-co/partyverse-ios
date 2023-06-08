@@ -1,3 +1,9 @@
 "profile" = "профиль";
-"login" = "вход";
-"greetings %@" = "Привет, %@!";
+"new-user" = "Вы Новенький? Регистрация";
+"sign-in" = "войти";
+"sign-in-apple" = "войти через Apple";
+"sign-in-google" = "войти через Google";
+"log-out" = "выйти";
+"log-out-voiceover" = "вы действительно хотите выйти?";
+"register" = "зарегестрироваться";
+"cancel" = "Отменить";

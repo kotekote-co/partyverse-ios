@@ -66,7 +66,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(appUser: nil)
-            .environment(\.locale, Locale.init(identifier: "en"))
+        Group {
+            ContentView(appUser: nil)
+                .environment(\.locale, Locale.init(identifier: "en"))
+            
+            ContentView(appUser: nil)
+                .environment(\.locale, Locale.init(identifier: "ru"))
+        }
     }
 }

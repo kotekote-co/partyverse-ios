@@ -10,12 +10,11 @@ struct SettingView: View {
             Button {
                 isPresented.toggle()
             } label: {
-                Label("log out", systemImage: "door.left.hand.open")
+                Label("log-out", systemImage: "door.left.hand.open")
                     .foregroundColor(.red)
             }
-            .confirmationDialog("do you really want to log out?",
-                                isPresented: $isPresented) {
-                Button("log out", role: .destructive) {
+            .confirmationDialog("log-out-voiceover", isPresented: $isPresented) {
+                Button("log-out", role: .destructive) {
                     Task {
                         do {
                             try await AuthManager.shared.signOut()
@@ -25,6 +24,9 @@ struct SettingView: View {
                         }
                     }
                 }
+                Button("cancel", role: .cancel) {
+                    isPresented.toggle()
+                }
             }
         }
     }
@@ -32,6 +34,14 @@ struct SettingView: View {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView(appUser: .constant(.init(uuid: "1234", email: "example@mail.com")))
+        Group {
+            SettingView(appUser: .constant(.init(uuid: "1234", email: "example@mail.com")))
+                .environment(\.locale, Locale.init(identifier: "en"))
+                .previewDisplayName("en")
+            
+            SettingView(appUser: .constant(.init(uuid: "1234", email: "example@mail.com")))
+                .environment(\.locale, Locale.init(identifier: "ru"))
+                .previewDisplayName("ru")
+        }
     }
 }

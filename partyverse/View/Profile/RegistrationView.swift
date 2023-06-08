@@ -29,7 +29,7 @@ struct RegistrationView: View {
                     }
                 }
             } label: {
-                Text("Register")
+                Text("register")
                     .padding()
                     .foregroundColor(Color(uiColor: .systemBackground))
                     .frame(maxWidth: .infinity)
@@ -47,7 +47,15 @@ struct RegistrationView: View {
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationView(appUser: .constant(.init(uuid: "1234", email: nil)))
-            .environmentObject(SignInViewModel())
+        Group {
+            RegistrationView(appUser: .constant(.init(uuid: "1234", email: nil)))
+                .environment(\.locale, Locale.init(identifier: "en"))
+                .previewDisplayName("en")
+            
+            RegistrationView(appUser: .constant(.init(uuid: "1234", email: nil)))
+                .environment(\.locale, Locale.init(identifier: "ru"))
+                .previewDisplayName("ru")
+        }
+        .environmentObject(SignInViewModel())
     }
 }

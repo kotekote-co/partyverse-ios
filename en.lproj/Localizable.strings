@@ -1,3 +1,9 @@
 "profile" = "profile";
-"login" = "login";
-"greetings %@" = "Hello, %@!";
+"new-user" = "New user? Register Here";
+"sign-in" = "sign in";
+"sign-in-apple" = "sign in with Apple";
+"sign-in-google" = "sign in with Google";
+"log-out" = "log out";
+"log-out-voiceover" = "do you really want to log out?";
+"register" = "register";
+"cancel" = "Cancel";

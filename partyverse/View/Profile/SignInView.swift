@@ -12,13 +12,13 @@ struct SignInView: View {
     var body: some View {
         VStack(spacing: 30) {
             VStack(spacing: 10) {
-                AppTextField(placeHolder: "Email", text: $email)
+                AppTextField(placeHolder: "email", text: $email)
                 
-                AppSecureField(placeHolder: "Password", text: $password)
+                AppSecureField(placeHolder: "password", text: $password)
             }
             .padding(.horizontal, 24)
             
-            Button("New User? Register Here") {
+            Button("new-user") {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented) {
@@ -43,7 +43,7 @@ struct SignInView: View {
                     }
                 }
             } label: {
-                Text("Sign In")
+                Text("sign-in")
                     .padding()
                     .foregroundColor(Color(uiColor: .systemBackground))
                     .frame(maxWidth: .infinity)
@@ -67,7 +67,7 @@ struct SignInView: View {
                         }
                     }
                 } label: {
-                    Text("Sign in with Apple")
+                    Text("sign-in-apple")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .foregroundColor(Color(uiColor: .label))
@@ -87,7 +87,7 @@ struct SignInView: View {
                         }
                     }
                 } label: {
-                    Text("Sign in with Google")
+                    Text("sign-in-google")
                         .frame(maxWidth: .infinity)
                         .padding()
                         .foregroundColor(Color(uiColor: .label))
@@ -105,6 +105,14 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView(appUser: .constant(.init(uuid: "1234", email: nil)))
+        Group {
+            SignInView(appUser: .constant(.init(uuid: "1234", email: nil)))
+                .environment(\.locale, Locale.init(identifier: "en"))
+                .previewDisplayName("en")
+            
+            SignInView(appUser: .constant(.init(uuid: "1234", email: nil)))
+                .environment(\.locale, Locale.init(identifier: "ru"))
+                .previewDisplayName("ru")
+        }
     }
 }
