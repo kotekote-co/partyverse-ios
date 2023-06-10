@@ -4,6 +4,7 @@
 "sign-in-apple" = "войти через Apple";
 "sign-in-google" = "войти через Google";
 "log-out" = "выйти";
-"log-out-voiceover" = "вы действительно хотите выйти?";
+"log-out-desc" = "вы действительно хотите выйти?";
 "register" = "зарегестрироваться";
 "cancel" = "Отменить";
+"account-management" = "настройки аккаунта";

@@ -69,9 +69,11 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             ContentView(appUser: nil)
                 .environment(\.locale, Locale.init(identifier: "en"))
+                .previewDisplayName("en")
             
             ContentView(appUser: nil)
                 .environment(\.locale, Locale.init(identifier: "ru"))
+                .previewDisplayName("ru")
         }
     }
 }

@@ -6,26 +6,28 @@ struct SettingView: View {
     @State private var isPresented = false
     
     var body: some View {
-        List {
-            Button {
-                isPresented.toggle()
-            } label: {
-                Label("log-out", systemImage: "door.left.hand.open")
-                    .foregroundColor(.red)
-            }
-            .confirmationDialog("log-out-voiceover", isPresented: $isPresented) {
-                Button("log-out", role: .destructive) {
-                    Task {
-                        do {
-                            try await AuthManager.shared.signOut()
-                            self.appUser = nil
-                        } catch {
-                            print("error signing out")
+        Form {
+            Section(header: Text("account-management")) {
+                Button {
+                    isPresented.toggle()
+                } label: {
+                    Label("log-out", systemImage: "door.left.hand.open")
+                        .foregroundColor(.red)
+                }
+                .confirmationDialog("log-out-desc", isPresented: $isPresented, titleVisibility: .visible) {
+                    Button("log-out", role: .destructive) {
+                        Task {
+                            do {
+                                try await AuthManager.shared.signOut()
+                                self.appUser = nil
+                            } catch {
+                                print("error signing out")
+                            }
                         }
                     }
-                }
-                Button("cancel", role: .cancel) {
-                    isPresented.toggle()
+                    Button("cancel", role: .cancel) {
+                        isPresented.toggle()
+                    }
                 }
             }
         }

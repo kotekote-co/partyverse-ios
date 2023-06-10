@@ -4,6 +4,7 @@
 "sign-in-apple" = "sign in with Apple";
 "sign-in-google" = "sign in with Google";
 "log-out" = "log out";
-"log-out-voiceover" = "do you really want to log out?";
+"log-out-desc" = "do you really want to log out?";
 "register" = "register";
 "cancel" = "Cancel";
+"account-management" = "account management";
