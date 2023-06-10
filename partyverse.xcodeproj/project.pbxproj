@@ -110,9 +110,9 @@
 		942B4AE42A191F1C00574298 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				948632722A1A200F00A5299D /* Profile */,
 				948EE1AA2A2E48C1002A7F4E /* Settings */,
 				9451F8E02A06AC97004E4603 /* ContentView.swift */,
-				948632722A1A200F00A5299D /* Profile */,
 				942B4AE52A191F2900574298 /* Helpers */,
 			);
 			path = View;

@@ -6,19 +6,23 @@ struct MapView: View {
     @StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .bottomTrailing) {
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
                 .edgesIgnoringSafeArea(.all)
             
-            LocationButton(.currentLocation) {
-                viewModel.requestAllowOnceLocationPermission()
+            HStack {
+                VStack {
+                    LocationButton(.currentLocation) {
+                        viewModel.requestAllowOnceLocationPermission()
+                    }
+                    .foregroundColor(.white)
+                    .cornerRadius(30)
+                    .labelStyle(.iconOnly)
+                    .symbolVariant(.fill)
+                    .padding(.trailing, 15)
+                    .padding(.bottom, 30)
+                }
             }
-            .foregroundColor(.white)
-            .cornerRadius(30)
-            .labelStyle(.iconOnly)
-            .symbolVariant(.fill)
-            .padding(.leading, 320)
-            .padding(.bottom, 40)
         }
     }
 }
