@@ -7,26 +7,24 @@ struct ProfileView: View {
         if let appUser = appUser {
             NavigationView {
                 ZStack {
-                    HStack {
-                        Spacer()
+                    VStack {
                         VStack {
-                            NavigationLink {
-                                SettingView(appUser: $appUser)
-                            } label: {
-                                Label("settings", systemImage: "gear")
-                            }
-                            .padding(.top, 15)
-                            .padding(.trailing, 15)
-                            .buttonStyle(.borderless)
-                            .labelStyle(.iconOnly)
-                            Spacer()
+                            Text(appUser.uuid)
+                            
+                            Text(appUser.email ?? "No email")
                         }
                     }
-                    
-                    VStack {
-                        Text(appUser.uuid)
-                        
-                        Text(appUser.email ?? "No email")
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            SettingView(appUser: $appUser)
+                        } label: {
+                            Label("settings", systemImage: "gear")
+                        }
+                        .padding(.all, 5)
+                        .buttonStyle(.borderless)
+                        .labelStyle(.iconOnly)
                     }
                 }
             }
