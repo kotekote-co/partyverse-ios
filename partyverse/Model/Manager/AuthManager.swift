@@ -54,13 +54,21 @@ class AuthManager {
 //        urlRequest.httpMethod = "POST"
 //
 //        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-//        urlRequest.addValue("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3a2lucHVheXptdGR6dnFvYWtvIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzUzNTQwMzcsImV4cCI6MTk5MDkzMDAzN30.C_ouXJu2yQ2Nuw1GhzunAnpWYbQiM4H0H3Jjij_AV8U"
+//        urlRequest.addValue("key"
 //                            , forHTTPHeaderField: "apikey")
 //
 //        let json = [
 //            "id_token": idToken,
 //            "provider": "google"
 //        ]
+//
+//        let jsonData = try JSONSerialization.data(withJSONObject: json)
+//        print(json)
+//        print(jsonData)
+//        urlRequest.httpBody = jsonData
+//
+//        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+//        print(String(data: data, encoding: .utf8))
 //    }
     
     func signOut() async throws {

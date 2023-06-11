@@ -11,49 +11,25 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 VStack {
-                    if #available(iOS 16, *) {
-                        Button() {
-                            showingProfile.toggle()
-                        } label: {
-                            Label("profile", systemImage: "person.crop.circle")
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .padding(.all, 15)
-                        .sheet(isPresented: $showingProfile) {
-                            ZStack {
-                                if let _ = appUser {
-                                    ProfileView(appUser: $appUser)
-                                } else {
-                                    SignInView(appUser: $appUser)
-                                }
-                            }
-                            .presentationDragIndicator(.visible)
-                            .onAppear {
-                                Task {
-                                    self.appUser = try await AuthManager.shared.getCurrentSession()
-                                }
+                    Button() {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("profile", systemImage: "person.crop.circle")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding(.all, 15)
+                    .sheet(isPresented: $showingProfile) {
+                        ZStack {
+                            if let _ = appUser {
+                                ProfileView(appUser: $appUser)
+                            } else {
+                                SignInView(appUser: $appUser)
                             }
                         }
-                    } else {
-                        Button() {
-                            showingProfile.toggle()
-                        } label: {
-                            Label("profile", systemImage: "person.crop.circle")
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .padding(.all, 15)
-                        .sheet(isPresented: $showingProfile) {
-                            ZStack {
-                                if let _ = appUser {
-                                    ProfileView(appUser: $appUser)
-                                } else {
-                                    SignInView(appUser: $appUser)
-                                }
-                            }
-                            .onAppear {
-                                Task {
-                                    self.appUser = try await AuthManager.shared.getCurrentSession()
-                                }
+                        .presentationDragIndicator(.visible)
+                        .onAppear {
+                            Task {
+                                self.appUser = try await AuthManager.shared.getCurrentSession()
                             }
                         }
                     }
