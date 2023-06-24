@@ -7,7 +7,7 @@ struct SettingView: View {
     
     var body: some View {
         Form {
-            Section(header: Text("account-management")) {
+            Section(header: Label("account-management", systemImage: "person.fill")) {
                 Button {
                     isPresented.toggle()
                 } label: {
